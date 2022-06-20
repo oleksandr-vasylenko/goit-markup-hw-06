@@ -591,7 +591,9 @@ a {
 }
 
 /* FOOTER SOCIAL */
-.social-title {
+.social-title,
+.subscr-title {
+  display: block;
   margin-bottom: 20px;
 
   color: var(--white-text);
@@ -607,6 +609,10 @@ a {
 
 .footer-contact-block {
   margin-right: 70px;
+}
+
+.footer-social-block {
+  margin-right: 93px;
 }
 
 .footer-social-list {
@@ -644,6 +650,59 @@ a {
 .footer-social-link:focus {
   background-color: var(--accent);
   color: var(--white-text);
+}
+
+/* SUBSCRIPTION FORM */
+
+.subscr {
+}
+
+.subscr-block {
+  /* display: flex; */
+}
+
+.subscr-input {
+  display: flex;
+}
+
+.subscr-field {
+  padding-left: 16px;
+  margin-right: 12px;
+
+  width: 358px;
+  height: 50px;
+  left: 815px;
+  top: 2787px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  border-radius: 4px;
+  background-color: #2f303a;
+}
+
+.subscr-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+
+  background: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+
+  font-size: 16px;
+  line-height: 1.88px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text);
+  cursor: pointer;
+}
+
+.subscr-icon {
+  fill: var(--white-text);
+  margin-left: 10px;
 }
 
 /* --------------- PORTFOLIO PAGE ---------------- */
