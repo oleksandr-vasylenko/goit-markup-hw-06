@@ -424,6 +424,43 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+
+        <form action="" class="order-form">
+          <b class="order-title">Оставьте свои данные, мы вам перезвоним</b>
+          <ul class="order-form-list list">
+            <li class="order-field item">
+              <label for="name">Имя</label>
+              <input class="order-field-input" type="text" name="name" id="name" autofocus />
+            </li>
+
+            <li class="order-field item">
+              <label for="tel">Телефон</label>
+              <input class="order-field-input" type="tel" name="tel" id="tel" autofocus />
+            </li>
+
+            <li class="order-field item">
+              <label for="mail">Почта</label>
+              <input class="order-field-input" type="email" name="mail" id="mail" autofocus />
+            </li>
+
+            <li class="order-field item">
+              <label for="comment">Комментарий</label>
+              <input class="order-field-input" type="comment" name="comment" id="comment" autofocus />
+            </li>
+          </ul>
+
+          <div class="order-agreement">
+            <input type="checkbox" name="agreement" id="agreement" />
+            <label for="agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <span>
+                <a class="order-agreement-link" href="">Условия договора</a>
+              </span></label
+            >
+          </div>
+
+          <button type="submit" class="order-btn">Отправить</button>
+        </form>
       </div>
     </div>
 
