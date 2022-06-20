@@ -675,7 +675,8 @@ a {
   top: 2787px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
-  /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--white-text); /* need to confirm this color*/
   border-radius: 4px;
   background-color: #2f303a;
 }
@@ -698,6 +699,13 @@ a {
   letter-spacing: 0.06em;
   color: var(--white-text);
   cursor: pointer;
+
+  transition: background-color var(--speed) var(--duration), box-shadow var(--speed) var(--duration);
+}
+
+.subscr-btn:hover,
+.subscr-btn:focus {
+  background-color: #188ce8;
 }
 
 .subscr-icon {
