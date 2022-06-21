@@ -318,6 +318,7 @@ a {
   fill: var(--accent);
 }
 
+/* form */
 .order-form {
   display: flex;
   flex-direction: column;
@@ -339,7 +340,7 @@ a {
   margin-bottom: 10px;
 }
 
-.order-form-list label {
+.order-form-list .order-field-label {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -366,20 +367,13 @@ a {
   padding: 12px;
 }
 
-.order-field .textarea::placeholder {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-/* .order-field-input:hover,
+.order-field-input:hover,
 .order-field-input:focus {
   border-color: var(--accent);
-} */
+}
 
-.order-field-label:focus-within > .order-field-icon,
-.order-field-label:hover > .order-field-icon {
+.order-field-input:hover + .order-field-icon,
+.order-field-input:focus + .order-field-icon {
   fill: var(--accent);
 }
 
@@ -388,12 +382,21 @@ a {
   display: flex;
   align-items: center;
   margin-top: 4px;
-  fill: var(--secondary-text);
 }
 
 .order-field-icon {
   position: absolute;
   left: 12px;
+
+  transition: fill var(--speed) var(--duration);
+}
+
+/* agreement */
+.order-field .textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .order-agreement {
@@ -411,6 +414,7 @@ a {
   text-decoration: underline;
 }
 
+/* button */
 .order-btn {
   width: 200px;
   height: 50px;
