@@ -350,13 +350,50 @@ a {
 }
 
 .order-field-input {
+  padding-left: 30px;
+  padding-right: 15px;
+
   height: 40px;
+  width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition: border-color var(--speed) var(--duration);
 }
 
-.order-field-input[type='comment'] {
+.order-field-input[name='comment'] {
   height: 120px;
+  padding: 12px;
+}
+
+.order-field .textarea::placeholder {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+/* .order-field-input:hover,
+.order-field-input:focus {
+  border-color: var(--accent);
+} */
+
+.order-field-label:focus-within > .order-field-icon,
+.order-field-label:hover > .order-field-icon {
+  fill: var(--accent);
+}
+
+.order-field-cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  fill: var(--secondary-text);
+}
+
+.order-field-icon {
+  position: absolute;
+  left: 12px;
 }
 
 .order-agreement {

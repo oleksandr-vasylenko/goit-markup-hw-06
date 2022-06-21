@@ -429,23 +429,48 @@
           <b class="order-title">Оставьте свои данные, мы вам перезвоним</b>
           <ul class="order-form-list list">
             <li class="order-field item">
-              <label for="name">Имя</label>
-              <input class="order-field-input" type="text" name="name" id="name" autofocus />
+              <label class="order-field-label" for="name"
+                >Имя
+                <div class="order-field-cont">
+                  <input class="order-field-input" type="text" name="name" id="name" autofocus />
+                  <svg class="order-field-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-name"></use>
+                  </svg>
+                </div>
+              </label>
             </li>
 
             <li class="order-field item">
-              <label for="tel">Телефон</label>
-              <input class="order-field-input" type="tel" name="tel" id="tel" autofocus />
+              <label class="order-field-label" for="tel"
+                >Телефон
+                <div class="order-field-cont">
+                  <input class="order-field-input" type="tel" name="tel" id="tel" />
+                  <svg class="order-field-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                </div>
+              </label>
             </li>
 
             <li class="order-field item">
-              <label for="mail">Почта</label>
-              <input class="order-field-input" type="email" name="mail" id="mail" autofocus />
+              <label class="order-field-label" for="mail"
+                >Почта
+                <div class="order-field-cont">
+                  <input class="order-field-input" type="email" name="mail" id="mail" />
+                  <svg class="order-field-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
+                </div>
+              </label>
             </li>
 
             <li class="order-field item">
-              <label for="comment">Комментарий</label>
-              <input class="order-field-input" type="comment" name="comment" id="comment" autofocus />
+              <label class="order-field-label" for="comment"
+                >Комментарий
+                <div class="order-field-cont">
+                  <textarea class="order-field-input textarea" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                </div>
+              </label>
             </li>
           </ul>
 
@@ -455,8 +480,8 @@
               >Соглашаюсь с рассылкой и принимаю
               <span>
                 <a class="order-agreement-link" href="">Условия договора</a>
-              </span></label
-            >
+              </span>
+            </label>
           </div>
 
           <button type="submit" class="order-btn">Отправить</button>
