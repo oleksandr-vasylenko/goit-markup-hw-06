@@ -420,6 +420,13 @@ a {
 
 .order-agreement-link .link {
   color: var(--accent);
+  text-decoration: underline;
+
+  transition: text-decoration var(--speed) var(--duration);
+}
+
+.order-agreement-link .link:hover {
+  text-decoration-color: transparent;
 }
 
 .order-checkbox {
