@@ -465,15 +465,21 @@
           </ul>
 
           <div class="order-agreement">
-            <label for="order-agreement-label"></label>
-            <input type="checkbox" class="order-checkbox" id="order-agreement-label" />
-            <svg class="order-field-icon" width="16" height="15">
-              <use></use>
-            </svg>
-            <svg class="order-field-icon" width="16" height="15">
-              <use></use>
-            </svg>
-            Соглашаюсь с рассылкой и принимаю
+            <label for="order-agreement-label" class="order-agreement-label">
+              <input type="checkbox" class="order-checkbox" id="order-agreement-label" />
+
+              <svg class="order-icon-frame" width="16" height="15">
+                <use href="./images/icons.svg#icon-checkbox"></use>
+              </svg>
+
+              <svg class="order-icon-checked" width="16" height="15">
+                <use href="./images/icons.svg#icon-checkedbox"></use>
+              </svg>
+
+              <!-- <span class="checkbox-icon"></span> -->
+
+              Соглашаюсь с рассылкой и принимаю
+            </label>
             <span>
               <a class="order-agreement-link" href="">Условия договора</a>
             </span>
