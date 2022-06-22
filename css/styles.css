@@ -427,38 +427,27 @@ a {
 }
 
 .order-icon-frame {
-  opacity: 1;
   margin-right: 7px;
+  opacity: 1;
+
+  transition: opacity var(--speed) var(--duration);
 }
 
 .order-icon-checked {
-  opacity: 0;
   position: absolute;
   margin-right: 7px;
+  opacity: 0;
+
+  transition: opacity var(--speed) var(--duration);
 }
 
-.order-agreement-label:checked + .order-icon-frame {
+.order-checkbox:checked + .order-icon-frame {
   opacity: 0;
 }
 
-.order-agreement-label:checked ~ .order-icon-checked {
+.order-checkbox:checked ~ .order-icon-checked {
   opacity: 1;
 }
-
-/* .checkbox-icon {
-  margin-right: 7px;
-  width: 16px;
-  height: 15px;
-  border-radius: 2px;
-  display: inline-block;
-  background: transparent;
-  border: 2px solid var(--secondary-text);
-}
-
-.order-checkbox:checked + .checkbox-icon {
-  border-color: transparent;
-  background-color: var(--accent);
-} */
 
 /* button */
 .order-btn {
