@@ -779,6 +779,10 @@ a {
   color: var(--accent);
 }
 
+.footer-contact-block {
+  margin-right: auto;
+}
+
 /* FOOTER SOCIAL */
 .social-title,
 .subscr-title {
@@ -794,14 +798,6 @@ a {
 
 .footer .container {
   display: flex;
-}
-
-.footer-contact-block {
-  margin-right: 70px;
-}
-
-.footer-social-block {
-  margin-right: 93px;
 }
 
 .footer-social-list {
@@ -842,6 +838,10 @@ a {
 }
 
 /* SUBSCRIPTION FORM */
+.subscr {
+  margin-left: 93px;
+}
+
 .subscr-input {
   display: flex;
 }
